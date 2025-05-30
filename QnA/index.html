@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Find answers to common questions about PACO, including location accuracy, data storage, and background access settings to enhance your parking experience." />
+
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="icon" type="image/png" href="../images/favicon.png" />
+  <title>PACO: Auto | QnA</title>
+  <style>
+    /* Additional Q&A styles */
+    .qna-item {
+      margin-bottom: 30px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #2a3b5a; /* subtle divider */
+    }
+    .question {
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 10px;
+      font-size: 1.2em;
+    }
+    .question::before {
+      content: counter(qna-counter) ". ";
+      counter-increment: qna-counter;
+      color: #81a9ff; /* accent color for numbers */
+      font-weight: 700;
+    }
+    .answer {
+      color: #dcdcdc;
+      margin-left: 25px;
+      line-height: 1.6;
+      font-size: 1em;
+    }
+    /* Initialize counter */
+    body {
+      counter-reset: qna-counter;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../PrivacyPolicy/index.html">Privacy</a></li>
+      <li><a href="#" class="active" aria-current="page">QnA</a></li>
+    </ul>
+  </nav>
+
+  <h1>Questions & Answers</h1>
+
+  <div class="qna-item">
+    <div class="question">What affects the accuracy of location tracking?</div>
+    <div class="answer">
+      The accuracy of location tracking depends on the quality of the GPS signal. In environments such as underground parking garages or areas surrounded by tall buildings, location data may be less precise.
+    </div>
+  </div>
+
+  <div class="qna-item">
+    <div class="question">Where is my data stored, and can it be recovered if deleted?</div>
+    <div class="answer">
+      All data is securely stored locally on your device (iPhone/iPad). Please note that once data is deleted, it cannot be recovered.
+    </div>
+  </div>
+
+  <div class="qna-item">
+    <div class="question">How can I ensure the app records parking locations automatically?</div>
+    <div class="answer">
+      To ensure seamless tracking, we recommend enabling “Always” location access in your device settings. This allows the app to automatically record parking locations even when it is not actively in use.
+    </div>
+  </div>
+
+</body>
+</html>
